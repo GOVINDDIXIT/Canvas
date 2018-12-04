@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "139138701058",
+    "firebase_url": "https://canvas-74df8.firebaseio.com",
+    "project_id": "canvas-74df8",
+    "storage_bucket": "canvas-74df8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139138701058:android:008dbdb2476a0985",
+        "android_client_info": {
+          "package_name": "app.dixit.govind.canvas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139138701058-tsm8cpfv4megjtpfrrv9qr8gq99vkdfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.dixit.govind.canvas",
+            "certificate_hash": "bfc5f1e4e03675cdee88f593df3f10e4c7d914ac"
+          }
+        },
+        {
+          "client_id": "139138701058-r4014uis9g4dflubji7149uctb0pvfta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiUiSmZ5FRjjyZRWVOT7u-lFyjpM2eUHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139138701058-r4014uis9g4dflubji7149uctb0pvfta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
