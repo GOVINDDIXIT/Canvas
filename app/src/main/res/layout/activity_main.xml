@@ -9,12 +9,13 @@
     <ImageView
         android:id="@+id/iView"
         android:layout_width="match_parent"
-        android:layout_height="330dp"
+        android:layout_height="291dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp" />
 
     <LinearLayout
+        android:id="@+id/filechooserLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -38,6 +39,12 @@
             android:hint="Enter File here" />
     </LinearLayout>
 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/filechooserLayout"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
