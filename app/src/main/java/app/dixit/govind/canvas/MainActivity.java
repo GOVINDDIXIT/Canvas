@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
     private Button mButtonChooser;
     private Button mButtonUploads;
     private Button mButtonShowFeeds;
-    private TextView mTextViewShowFeeds;
     private EditText mEditTextFileName;
     private ImageView mImageView;
     private ProgressBar mProgressBar;
@@ -78,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
         mButtonShowFeeds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                OpenImagesActivity();
 
             }
         });
@@ -96,6 +96,11 @@ public class MainActivity extends AppCompatActivity {
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent,PICK_IMAGE_REQUEST);
+    }
+
+    public void OpenImagesActivity(){
+        Intent intent =new Intent(this,ImagesActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -129,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                                 public void run() {
                                     mProgressBar.setProgress(0);
                                 }
-                            },5000);
+                            },500);
                             Toast.makeText(MainActivity.this, "Upload Successful", Toast.LENGTH_LONG).show();
                             Upload upload = new Upload(mEditTextFileName.getText().toString().trim(),
                                     taskSnapshot.getDownloadUrl().toString());
